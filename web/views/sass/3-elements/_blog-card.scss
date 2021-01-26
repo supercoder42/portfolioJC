@@ -1,0 +1,166 @@
+
+
+
+/*=====================================
+            BLOG CARD STYLE
+======================================*/
+.blog-card {
+    border-radius: 10px;
+    margin-bottom: 50px;
+
+    &:hover {
+        .blog-oly {
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .blog-img {
+            img {
+                transform: scale(1.1);
+            }
+        }
+
+        .blog-text {
+            h4 {
+                a {
+                    color: var(--primary);
+                }
+            }
+        }
+    }
+}
+
+.blog-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 22px;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+        @include cursor__transition;
+    }
+}
+
+.blog-oly {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    @include cursor__transition;
+
+    p {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        padding: 4px 12px;
+        background: var(--primary);
+        border-radius: 5px;
+        color: var(--white);
+        font-size: 13px;
+        line-height: 22px;
+        text-transform: capitalize;
+    }
+}
+
+.blog-content {
+    padding: 0px 15px;
+}
+
+.blog-meta {
+    @include flex__center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+
+    li {
+        @include flex__center;
+
+        i {
+            margin-right: 8px;
+        }
+
+        p {
+            font-size: 15px;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.blog-text {
+    margin-bottom: 20px;
+
+    h4 {
+        font-weight: 500;
+
+        a {
+            color: var(--heading);
+            @include cursor__transition;
+        }
+    }
+}
+
+.blog-link {
+    @include flex__center;
+    justify-content: space-between;
+
+    li {
+        @include flex__center;
+
+        i {
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        p {
+            font-size: 15px;
+            text-transform: capitalize;
+        }
+
+        a {
+            font-size: 13px;
+            line-height: 20px;
+            padding: 6px 25px;
+        }
+    }
+}
+
+
+// for blog card responsive
+@media (max-width: 767px) {
+    .blog-card {
+        margin-bottom: 45px;
+    }
+
+    .blog-text {
+        h4 {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .blog-card {
+        margin-bottom: 45px;
+    }
+
+    .blog-text {
+        h4 {
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .blog-text {
+        h4 {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+}

@@ -1,0 +1,120 @@
+
+
+
+/*=====================================
+            SERVICE CARD STYLE
+======================================*/
+.service-card {
+    margin-bottom: 30px;
+    background: var(--white);
+    text-align: center;
+    padding: 60px 40px 65px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 1;
+    @include cursor__transition;
+
+    &:hover {
+        transform: translateY(-3px);
+
+        &::after {
+            clip-path: circle(75%);
+        }
+
+        i {
+            visibility: hidden;
+        }
+
+        h4,
+        p {
+            color: var(--white);
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        background: var(--primary);
+        clip-path: circle(20% at 100% 0%);
+        z-index: -1;
+        @include cursor__transition;
+    }
+
+    h3 {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 50%;
+        color: var(--white);
+        font-size: 24px;
+        font-weight: 500;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+
+    span {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-size: 80px;
+        line-height: 80px;
+        color: var(--service-icon);
+    }
+
+    i {
+        color: var(--primary);
+        font-size: 45px;
+        line-height: 45px;
+        display: inline-block;
+        margin-bottom: 18px;
+    }
+
+    h4 {
+        color: var(--heading);
+        font-weight: 500;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        @include cursor__transition;
+    }
+    
+    p {
+        @include cursor__transition;
+    }
+}
+
+.service-ghape {
+    margin-top: -80px;
+}
+
+// for service card responsive style
+@media (max-width: 991px) {
+    .service-ghape {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 767px) {
+    .service-card {
+        padding: 50px 14px 55px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .service-card {
+        padding: 60px 34px 65px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .service-card {
+        padding: 60px 30px 65px;
+    }
+}

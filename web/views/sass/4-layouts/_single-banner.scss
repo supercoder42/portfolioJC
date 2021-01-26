@@ -1,0 +1,43 @@
+
+
+
+/*=====================================
+         INNER BANNER PART STYLE
+======================================*/
+.single-banner {
+    background: url(../../img/single-banner.jpg);
+    @include background__property;
+}
+
+.single-oly {
+    background: rgba(209, 65, 40, 0.8);
+    padding: 98px 0px 175px;
+}
+
+.single-content {
+    text-align: center;
+
+    h1 {
+        font-size: 38px;
+        line-height: 46px;
+        color: var(--white);
+        text-transform: capitalize;
+        letter-spacing: 0.5px;
+        margin-bottom: 15px;
+    }
+}
+
+// INNER BANNER RESPONSIVE STYLE 
+
+@media (max-width: 575px) {
+    .single-oly {
+        padding: 60px 0px 118px;
+    }
+
+    .single-content {
+        h1 {
+            font-size: 35px;
+            line-height: 43px;
+        }
+    }
+}

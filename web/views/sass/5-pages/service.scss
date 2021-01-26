@@ -1,0 +1,184 @@
+
+
+//========================================
+//          1 - HELPERS FOLDER
+//========================================
+@import "../1-helpers/_mixin.scss";
+
+
+//========================================
+//          2 - COMPONENTS FOLDER
+//========================================
+@import "../2-components/_breadcrumb.scss";
+@import "../2-components/_slider-arrow.scss";
+@import "../2-components/_back2top-btn.scss";
+
+
+//========================================
+//          3 - ELEMENTS FOLDER
+//========================================
+@import "../3-elements/_feature-card.scss";
+@import "../3-elements/_service-card.scss";
+@import "../3-elements/_counter-card.scss";
+@import "../3-elements/_pricing-card.scss";
+@import "../3-elements/_testimonial-card.scss";
+@import "../3-elements/_section-heading.scss";
+
+
+//========================================
+//          4 - LAYOUTS FOLDER
+//========================================
+@import "../4-layouts/_single-banner.scss";
+@import "../4-layouts/_contact.scss";
+
+
+/*=====================================
+            SERVICE PART STYLE
+======================================*/
+.service-part {
+    padding: 40px 0px 0px;
+
+    .section-heading {
+        margin-bottom: 130px;
+    }
+}
+
+.service-btn {
+    text-align: center;
+}
+
+@media (max-width: 767px) {    
+    .service-part {
+        .section-heading {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .service-part {
+        padding: 0px;
+    }
+    
+    .service-btn {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .service-part {
+        .section-heading {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+/*=====================================
+          PRICING PART STYLE
+======================================*/
+.pricing-part{
+    .section-heading {
+        margin-bottom: 90px;
+    }
+}
+
+@media (max-width: 991px) {
+    .pricing-part{
+        .section-heading {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+/*=====================================
+            FAQ PART STYLE
+======================================*/
+.faq-part {
+    padding: 150px 0px 0px;
+}
+
+.faq-child {
+    margin-bottom: 30px;
+    background: var(--white);
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+    border-left: 3px solid var(--primary);
+    border-right: 3px solid var(--primary);
+
+    &:hover {
+        .faq-que {
+            button {
+                color: var(--primary);
+            }
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+.faq-que {
+    cursor: pointer;
+    padding: 18px 25px;
+
+    button {
+        border: none;
+        outline: none;
+        background: none;
+        text-align: left;
+        color: var(--heading);
+        font-size: 16px;
+        font-weight: 500;
+        @include cursor__transition;
+    }
+}
+
+.faq-ans {
+    p {
+        font-size: 14px;
+        line-height: 26px;
+        padding: 20px 25px;
+        border-top: 1px solid var(--border);
+    }
+}
+
+// FAQ RESPONSIVE STYLE
+@media (max-width: 767px) {
+    .faq-part {
+        padding: 20px 0px 0px;
+    }
+
+    .faq-parent {
+        margin-bottom: 30px;
+    }
+
+    .faq-heading {
+        h2 {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .faq-part {
+        padding: 30px 0px 0px;
+    }
+}
+
+/*=====================================
+          TESTIMONIAL PART STYLE
+======================================*/
+.testi-btn {
+    text-align: center;
+    margin-top: 50px;
+}
+
+// TESTIMONIAL RESPONSIVE STYLE
+@media (min-width: 576px) and (max-width: 767px) {
+    .testi-part {
+        .container {
+            max-width: 570px;
+        }
+    }
+}

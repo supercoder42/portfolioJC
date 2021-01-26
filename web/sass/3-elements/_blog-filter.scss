@@ -1,0 +1,188 @@
+
+
+
+/*=====================================
+        BLOG FILTER ELEMENTS STYLE
+======================================*/
+// for blog search filter
+.blog-src {
+    position: relative;
+    margin-bottom: 45px;
+
+    input {
+        width: 100%;
+        height: 52px;
+        border-radius: 50px;
+        padding: 0px 60px 0px 20px;
+        border: 2px solid var(--primary);
+    }
+
+    button {
+        border: none;
+        outline: none;
+        background: none;
+        position: absolute;
+        top: 6px;
+        right: 6px;
+
+        i {
+            width: 40px;
+            height: 40px;
+            font-size: 14px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            color: var(--white);
+            background: var(--primary);
+            text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+
+// for blog heading filter
+.blog-filter {
+    margin-bottom: 50px;
+
+    h4 {
+        font-weight: 600;
+        margin-bottom: 48px;
+        text-transform: capitalize;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 45px;
+            left: 0px;
+            width: 60px;
+            height: 2px;
+            border-radius: 30px;
+            background: var(--primary);
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 50px;
+            left: 0px;
+            width: 35px;
+            height: 2px;
+            border-radius: 30px;
+            background: var(--primary);
+        }
+    }
+}
+
+// for blog category filter
+.blog-cate {
+    display: block;
+
+    li {
+        @include flex__center;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--border);
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        
+        &:hover {
+            h5 {
+                a {
+                    color: var(--primary);
+                }
+            }
+
+            p {
+                color: var(--white);
+                background: var(--primary);
+            }
+        }
+
+        h5 {
+            font-weight: 500;
+
+            a {
+                color: var(--text);
+                @include cursor__transition;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 500;
+            width: 35px;
+            height: 35px;
+            line-height: 37px;
+            text-align: center;
+            border-radius: 50%;
+            color: var(--primary);
+            background: var(--light-white);
+            text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+
+// for blog tag filter
+.blog-tag {
+    li {
+        display: inline-block;
+        margin: 0px 8px 12px 0px;
+
+        a {
+            color: var(--text);
+            font-size: 14px;
+            padding: 2px 15px;
+            border-radius: 30px;
+            text-transform: capitalize;
+            border: 1px solid var(--border);
+
+            &:hover {
+                color: var(--white);
+                background: var(--primary);
+            }
+        }
+    }
+}
+
+
+// for blog icon filter
+.blog-icon {
+    li {
+        display: inline-block;
+        margin-right: 8px;
+
+        a {
+            i {
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                text-align: center;
+                border-radius: 50%;
+                color: var(--primary);
+                background: var(--light-white);
+                text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
+
+                &:hover {
+                    color: var(--white);
+                    background: var(--primary);
+                }
+            }
+        }
+    }
+}
+
+
+// for blog ad banner
+.blog-ad {
+    a {
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+}

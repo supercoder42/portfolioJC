@@ -1,0 +1,43 @@
+
+
+/*========================================
+
+Template type        :  Personal Portfolio
+Version              :  v1.0.01
+Author name          :  Mironcoder
+Support mail         :  mironcoder@gmail.com
+Themeforest Profile  :  https://themeforest.net/user/mironcoder
+
+=========================================*/
+
+
+//========================================
+//          1 - HELPERS FOLDER
+//========================================
+@import "1-helpers/_font.scss";
+@import "1-helpers/_variable.scss";
+@import "1-helpers/_mixin.scss";
+@import "1-helpers/_common.scss";
+
+
+//========================================
+//          2 - COMPONENTS FOLDER
+//========================================
+@import "2-components/_back2top-btn.scss";
+@import "2-components/_dropdown.scss";
+@import "2-components/_button.scss";
+@import "2-components/_icon.scss";
+@import "2-components/_form.scss";
+
+
+//========================================
+//          3 - ELEMENTS FOLDER
+//========================================
+@import "3-elements/_section-heading.scss";
+
+
+//=======================================
+//          4 - LAYOUTS FOLDER
+//=======================================
+@import "4-layouts/_navbar.scss";
+@import "4-layouts/_footer.scss";

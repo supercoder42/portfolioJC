@@ -1,0 +1,21 @@
+
+
+
+/*=====================================
+            SELECT OPTION STYLE
+======================================*/
+.custom-select {
+    border: none;
+    width: 150px;
+    font-size: 15px;
+    border-radius: 0px;
+    text-transform: capitalize;
+    color: var(--placeholder);
+    border-left: 1px solid var(--border);
+    cursor: pointer;
+}
+
+.custom-select:focus {
+    box-shadow: none;
+    border-color: var(--border);
+}

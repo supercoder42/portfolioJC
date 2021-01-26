@@ -1,0 +1,116 @@
+
+
+/*=====================================
+          PORTFOLIO CARD STYLE
+======================================*/
+.port-card {
+    margin: 0px 15px;
+    border-radius: 8px;
+    position: relative;
+
+    &:hover {
+        .port-oly{
+            transform: scale(1);
+            transform-origin: center;
+        }
+    }
+}
+
+.port-img {
+    img {
+        width: 100%;
+        border-radius: 8px;
+    }
+}
+
+.port-oly{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.6);
+    transform: scale(0);
+    @include cursor__transition;
+}
+
+.port-btn {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 160px;
+
+    .btn {
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: capitalize;
+        padding: 10px 25px;
+        margin: 12px 0px;
+        border-radius: 5px;
+        letter-spacing: 0.3px;
+        @include cursor__transition;
+    }
+
+    .btn-inline {
+        color: var(--primary);
+        background: var(--white);
+
+        &:hover {
+            color: #fff;
+            background: var(--primary);
+        }
+    }
+}
+
+.port-text {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 0px 25px;
+
+    h6 {
+        color: var(--white);
+        font-weight: 500;
+        text-transform: capitalize;
+        letter-spacing: 0.3px;
+        margin-left: 15px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: -15px;
+            width: 3px;
+            height: 100%;
+            background: var(--primary);
+            transform: translateY(-50%);
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .port-card {
+        width: 270px;
+        margin: 0px 8px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .port-part {
+        .container {
+            max-width: 570px;
+        }
+    }
+
+    .port-card {
+        margin: 0px 8px;
+    }
+}
+
+

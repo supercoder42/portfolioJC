@@ -1,0 +1,180 @@
+
+
+
+/*=====================================
+          PRICING CARD STYLE
+======================================*/
+.pricing-card {
+    text-align: center;
+    border-radius: 10px;
+    margin: 0px 8px;
+    padding: 30px 50px 30px;
+    box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.1);
+    @include cursor__transition;
+
+    &:hover {
+        transform: translateY(-3px);
+        background: var(--primary);
+
+        h3,
+        h4,
+        p,
+        .pricing-list li {
+            color: var(--white);
+        }
+
+        p {
+            &::before {
+                background: var(--light-white);
+            }
+        }
+
+        .pricing-btn {
+            .btn-inline {
+                color: var(--primary);
+                background: var(--white);
+            }
+        }
+    }
+
+    h3 {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--white);
+        margin-bottom: 80px;
+        text-transform: capitalize;
+        position: relative;
+        z-index: 1;
+        @include cursor__transition;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 130px;
+            background: var(--pricing-gdnt);
+            z-index: -1;
+            border-radius: 30px 0px 50% 50%;
+            box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+        }
+    }
+
+    h4 {
+        font-size: 42px;
+        font-weight: 600;
+        letter-spacing: -2px;
+        color: var(--heading);
+        margin-bottom: 3px;
+        @include cursor__transition;
+    }
+
+    p {
+        color: var(--text);
+        font-size: 12px;
+        text-transform: uppercase;
+        margin-bottom: 45px;
+        position: relative;
+        @include cursor__transition;
+
+        &::before {
+            position: absolute;
+            content: "";
+            bottom: -23px;
+            left: 0px;
+            width: 100%;
+            height: 1px;
+            background: var(--border);
+            @include cursor__transition
+        }
+    }
+}
+
+.pricing-list {
+    text-align: left;
+    list-style: disc;
+    margin-bottom: 35px;
+    display: inline-block;
+
+    li {
+        color: var(--text);
+        text-transform: capitalize;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        @include cursor__transition;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.pricing-btn {
+    .btn {
+        color: var(--white);
+        background: var(--heading);
+        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+        @include cursor__transition;
+    }
+}
+
+.pricing-recom {
+    transform: scale(1.1);
+    background: var(--primary);
+
+    &:hover {
+        transform: scale(1.1) translateY(-3px);
+    }
+
+    h3,
+    h4,
+    p,
+    .pricing-list li {
+        color: var(--white);
+    }
+
+    p {
+        &::before {
+            background: var(--light-white);
+        }
+    }
+
+    .pricing-btn {
+        .btn-inline {
+            color: var(--primary);
+            background: var(--white);
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .pricing-card {
+        margin: 0 auto 50px;
+        padding: 30px 30px;
+    }
+
+    .pricing-recom {
+        transform: scale(1);
+    
+        &:hover {
+            transform: scale(1) translateY(-3px);
+        }
+    }
+}
+
+@media (min-width: 400px) and (max-width: 767px) {
+    .pricing-card {
+        width: 350px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .pricing-btn {
+        .btn {
+            font-size: 13px;
+            padding: 16px 23px;
+        }
+    }
+}

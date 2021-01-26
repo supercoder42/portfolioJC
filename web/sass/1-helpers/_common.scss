@@ -1,0 +1,103 @@
+
+
+
+/*=====================================
+            ALL COMMON STYLE
+======================================*/
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+ul,
+ol {
+    list-style: none;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 15px;
+  letter-spacing: 0.3px;
+}
+
+button:focus {
+  outline: none;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text);
+    line-height: 28px;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--heading);
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: -0.8px;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: 400;
+}  

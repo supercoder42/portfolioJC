@@ -1,0 +1,75 @@
+
+
+
+//========================================
+//          1 - HELPERS FOLDER
+//========================================
+@import "../1-helpers/_mixin.scss";
+
+
+//========================================
+//          2 - COMPONENTS FOLDER
+//========================================
+@import "../2-components/_breadcrumb.scss";
+@import "../2-components/_pagination.scss";
+
+
+//========================================
+//          3 - ELEMENTS FOLDER
+//========================================
+@import "../3-elements/_blog-suggest.scss";
+@import "../3-elements/_blog-filter.scss";
+@import "../3-elements/_blog-card.scss";
+
+
+//========================================
+//          4 - LAYOUTS FOLDER
+//========================================
+@import "../4-layouts/_single-banner.scss";
+@import "../4-layouts/_contact.scss";
+
+
+/*=====================================
+            SINGLE BANNER STYLE
+======================================*/
+.single-oly {
+    padding: 115px 0px 115px;
+}
+
+@media (max-width: 767px) {
+    .single-oly {
+        padding: 80px 0px 80px;
+    }
+}
+
+
+/*=====================================
+         BLOG LIST PART STYLE
+======================================*/
+.blog-list-part {
+    padding: 100px 0px 0px;
+}
+
+.pagination {
+    margin-top: 50px;
+}
+
+@media (max-width: 767px) {
+    .blog-list-part {
+        padding: 60px 0px 0px;
+    }
+
+    .pagination {
+        margin: 0px 0px 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .blog-list-part {
+        padding: 80px 0px 0px;
+    }
+
+    .pagination {
+        margin: 0px 0px 50px;
+    }
+}

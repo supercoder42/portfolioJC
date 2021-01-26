@@ -1,0 +1,862 @@
+
+
+//========================================
+//          1 - HELPERS FOLDER
+//========================================
+@import "../1-helpers/_mixin.scss";
+
+
+//========================================
+//          1 - HELPERS FOLDER
+//========================================
+@import "../2-components/_slider-arrow.scss";
+
+
+//========================================
+//          3 - ELEMENTS FOLDER
+//========================================
+@import "../3-elements/_service-card.scss";
+@import "../3-elements/_resume-card.scss";
+@import "../3-elements/_reference-card.scss";
+@import "../3-elements/_portfolio-card.scss";
+@import "../3-elements/_skills-card.scss";
+@import "../3-elements/_counter-card.scss";
+@import "../3-elements/_pricing-card.scss";
+@import "../3-elements/_testimonial-card.scss";
+@import "../3-elements/_blog-card.scss";
+@import "../3-elements/_blog-suggest.scss";
+
+
+//========================================
+//          4 - LAYOUTS FOLDER
+//========================================
+@import "../4-layouts/_contact.scss";
+
+
+/*=====================================
+            BANNER PART STYLE
+======================================*/
+.banner-part {
+    background: var(--banner-bg);
+    overflow: hidden;
+    position: relative;
+
+    .container {
+        position: relative;
+    }
+}
+
+.banner-bg {
+    background: url(../../img/banner-bg.png);
+    @include background__property;
+    padding: 120px 0px;
+}
+
+.circle-shape {
+    position: absolute;
+    top: 93px;
+    right: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: auto;
+    opacity: 0.5;
+    animation: hasan 4s linear infinite;
+
+    @keyframes hasan {
+        0%{
+            transform: scale(1.8);
+        }
+        50%{
+            transform: scale(0.5);
+        }
+        100%{
+            transform: scale(1.8);
+        }
+    }
+}
+
+.star-shape {
+    position: absolute;
+    right: 0px;
+    bottom: -135px;
+    width: auto;
+    height: 120px;
+    opacity: 0.5;
+    animation: miron 4s linear infinite;
+
+    @keyframes miron {
+        0%{
+            transform: rotate(180deg) scale(1.2);
+        }
+        50%{
+            transform: rotate(0deg) scale(1);
+        }
+        100%{
+            transform: rotate(-180deg) scale(1.2);
+        }
+    }
+}
+
+.banner-img {
+    img {
+        width: auto;
+        height: 450px;
+    }
+}
+
+.banner-icon {
+    margin-bottom: 45px;
+
+    li {
+        display: inline-block;
+        margin-right: 18px;
+    }
+}
+
+.banner-text {
+    margin-bottom: 55px;
+
+    span {
+        font-size: 22px;
+        font-weight: 500;
+        color: var(--heading);
+        text-transform: capitalize;
+        margin-bottom: 13px;
+    }
+
+    h1 {
+        margin-bottom: 25px;
+    }
+}
+
+// BANNER RESPONSIVE STYLE
+
+@media (max-width: 767px) {
+    
+    .banner-bg {
+        padding: 40px 0px 50px;
+        background-position: right;
+    }
+
+    .circle-shape {
+        display: none;
+    }
+
+    .banner-img {
+        margin-bottom: 45px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .banner-content {
+        text-align: center;
+    }
+
+    .banner-icon {
+        li {
+            margin: 0px 5px;
+        }
+    }
+
+    .banner-text {
+        margin-bottom: 35px;
+
+        h1 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .banner-img {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .banner-icon {
+        li {
+            margin-right: 15px;
+        }
+    }
+
+    .banner-text {
+        margin-bottom: 40px;
+
+        h1 {
+            font-size: 32px;
+            line-height: 42px;
+        }
+    }
+
+    .banner-btn {
+        .btn {
+            padding: 14px 22px;
+            margin-right: 10px;
+            
+            &:nth-child(2) {
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .banner-img {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+/*=====================================
+            RESUME PART STYLE
+======================================*/
+.resume-cate-btn {
+    @include flex__center;
+
+    li {
+        margin: 15px 25px;
+    }
+}
+
+.cate-btn {
+    border: none;
+    width: 130px;
+    padding: 30px 0px;
+    border-radius: 8px;
+    text-align: center;
+    color: var(--text);
+    background: var(--white);
+    box-shadow: 0px 30px 70px 0px rgba(0, 0, 0, 0.2);
+
+    i {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    span {
+        display: block;
+        text-transform: capitalize;
+    }
+}
+
+.cate-btn.active {
+    color: var(--white);
+    background: var(--primary);
+}
+
+// RESUME RESPONSIVE STYLE
+
+@media (max-width: 767px) {
+    .resume-heading {
+        h2 {
+            width: 100%;
+        }
+    }
+
+    .resume-cate-btn {
+        flex-wrap: wrap;
+
+        li {
+            margin: 10px;
+        }
+    }
+
+    .cate-btn {
+        width: 107px;
+        padding: 25px 0px;
+
+        i {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+}
+
+/*=====================================
+            ABOUT PART STYLE
+======================================*/
+.about-summery {
+    margin-bottom: 50px;
+
+    h3 {
+        font-weight: 600;
+        margin-bottom: 38px;
+    }
+}
+
+.about-list {
+    @include flex__center;
+    justify-content: flex-start;
+    margin-bottom: 55px;
+
+    ul {
+        &:first-child {
+            margin-right: 80px;
+        }
+    }
+
+    li {
+        @include flex__center;
+        justify-content: flex-start;
+        margin-bottom: 18px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+
+        h6 {
+            text-transform: capitalize;
+            font-weight: 600;
+            margin-right: 15px;
+        }
+
+        p {
+            font-weight: 500;
+        }
+    }
+}
+
+.about-img img {
+    width: auto;
+    height: 450px;
+    margin-left: 50px;
+}
+
+.exper-part,
+.edu-part,
+.refer-part {
+    padding: 80px 0px 0px;
+    display: none;
+}
+
+// ABOUT RESPONSIVE STYLE
+
+@media (max-width: 767px) {
+    .about-summery {
+        margin-bottom: 30px;
+
+        h3 {
+            font-size: 26px;
+            line-height: 36px;
+            margin-bottom: 18px;
+        }
+    }
+
+    .about-list {
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+
+        ul {
+            margin-bottom: 18px;
+        }
+    }
+
+    .about-img img {
+        display: none;
+    }
+
+    .resume-card {
+        ul {
+            margin: 0px 18px;
+        }
+    }
+
+    .refer-card {
+        flex-wrap: wrap;
+    }
+
+    .refer-content {
+        transform: translateX(0px);
+        transform: translateY(-50px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .resume-card {
+        ul {
+            margin: 0px 22px;
+        }
+    }
+
+    .refer-card {
+        margin-bottom: 30px;
+    }
+
+    .about-img img {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .about-list {
+        ul {
+            &:nth-child(1) {
+                margin-right: 45px;
+            }
+
+            li {
+                h6 {
+                    font-size: 15px;
+                    margin-right: 8px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .about-img img {
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+    }
+
+    .refer-img {
+        img {
+            width: 215px;
+            height: 215px;
+        }
+    }
+
+    .refer-content {
+        padding: 35px 25px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+    .about-img img {
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+    }
+}
+
+/*=====================================
+            SERVICE PART STYLE
+======================================*/
+.service-part {
+    .section-heading {
+        margin-bottom: 130px;
+    }
+}
+
+.service-btn {
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    .service-btn {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .service-part {
+        .section-heading {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .service-part {
+        .section-heading {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+/*=====================================
+            CODING PART STYLE
+======================================*/
+.coding-content {
+    h3 {
+        color: #555;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 40px;
+        margin-bottom: 20px;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    p {
+        width: 420px;
+        margin-bottom: 45px;
+    }
+}
+
+.coding-list {
+    li {
+        @include flex__center;
+        justify-content: start;
+        margin-bottom: 25px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+.coding-round {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-right: 25px;
+    background: var(--primary);
+    box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.3);
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        width: 8px;
+        height: 8px;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: var(--white);
+    }
+}
+
+.coding-img {
+    img {
+        width: 100%;
+        margin-top: 45px;
+    }
+}
+
+// CODING RESPONSIVE STYLE
+
+@media (max-width: 575px) {
+    .coding-content {
+        h3 {
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+        p {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .coding-content {
+        h3 {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+}
+
+/*=====================================
+          PORTFOLIO PART STYLE
+======================================*/
+.port-slider {
+    &:hover {
+        .dandik,
+        .bamdik {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    .dandik,
+    .bamdik {
+        right: 33%;
+        transform: translateY(-50%);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .bamdik {
+        left: 33%;
+        transform: translateY(-50%);
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.port-show-btn {
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+/*=====================================
+          DISCUSS PART STYLE
+======================================*/
+.discuss-part {
+    transform: translateY(42%);
+}
+
+.discuss-oly {
+    background: var(--primary);
+    border-radius: 10px;
+    padding: 0px 15px;
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.15);
+}
+
+.discuss-bg {
+    background: url(../../img/discuss-bg.png);
+    @include background__property;
+    padding: 70px 70px;
+    border-radius: 10px;
+}
+
+
+.discuss-content {
+    h3 {
+        color: var(--white);
+        font-size: 42px;
+        line-height: 50px;
+        margin-bottom: 22px;
+    }
+
+    p {
+        color: var(--white);
+        font-size: 18px;
+    }
+}
+
+.discuss-btn {
+    text-align: right;
+
+    .btn {
+        font-size: 16px;
+        padding: 16px 40px;
+        margin-top: 25px;
+        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn-inline {
+        color: var(--primary);
+        background: var(--white);
+
+        &:hover {
+            color: var(--white);
+            background: var(--heading);
+        }
+    }
+}
+
+// DISCUSS RESPONSIVE STYLE
+
+@media (max-width: 767px) {
+    .discuss-part {
+        transform: translateY(15%);
+    }
+
+    .discuss-bg {
+        padding: 45px 15px;
+    }
+
+    .discuss-content {
+        text-align: center;
+        margin-bottom: 15px;
+
+        h3 {
+            font-size: 35px;
+            line-height: 43px;
+        }
+    }
+
+    .discuss-btn {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .discuss-part {
+        transform: translateY(20%);
+    }
+
+    .discuss-content {
+        p {
+            font-size: 17px;
+        }
+    }
+
+    .discuss-btn {
+        .btn {
+            margin-top: 70px;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .discuss-part {
+        transform: translateY(30%);
+    }
+}
+
+/*=====================================
+          COUNTER PART STYLE
+======================================*/
+.counter-part {
+    background: var(--heading);
+}
+
+.counter-bg {
+    background: url(../../img/counter-bg.png);
+    @include background__property;
+    padding: 205px 0px 90px;
+}
+
+// for counter part responsive style
+@media (max-width: 767px) {
+    .counter-bg {
+        padding: 100px 0px 60px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .counter-bg {
+        padding: 120px 0px 60px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .counter-bg {
+        padding: 180px 0px 90px;
+    }
+}
+
+/*=====================================
+          PRICING PART STYLE
+======================================*/
+.pricing-part{
+    .section-heading {
+        margin-bottom: 90px;
+    }
+}
+
+@media (max-width: 991px) {
+    .pricing-part{
+        .section-heading {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+/*=====================================
+            FAQ PART STYLE
+======================================*/
+.faq-part {
+    padding: 150px 0px 0px;
+}
+
+.faq-child {
+    margin-bottom: 30px;
+    background: var(--white);
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+    border-left: 3px solid var(--primary);
+    border-right: 3px solid var(--primary);
+
+    &:hover {
+        .faq-que {
+            button {
+                color: var(--primary);
+            }
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+.faq-que {
+    cursor: pointer;
+    padding: 18px 25px;
+
+    button {
+        border: none;
+        outline: none;
+        background: none;
+        text-align: left;
+        color: var(--heading);
+        font-size: 16px;
+        font-weight: 500;
+        @include cursor__transition;
+    }
+}
+
+.faq-ans {
+    p {
+        font-size: 14px;
+        line-height: 26px;
+        padding: 20px 25px;
+        border-top: 1px solid var(--border);
+    }
+}
+
+// FAQ RESPONSIVE STYLE
+@media (max-width: 767px) {
+    .faq-part {
+        padding: 20px 0px 0px;
+    }
+
+    .faq-parent {
+        margin-bottom: 30px;
+    }
+
+    .faq-heading {
+        h2 {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .faq-part {
+        padding: 30px 0px 0px;
+    }
+}
+
+/*=====================================
+          TESTIMONIAL PART STYLE
+======================================*/
+.testi-btn {
+    text-align: center;
+    margin-top: 50px;
+}
+
+// TESTIMONIAL RESPONSIVE STYLE
+@media (min-width: 576px) and (max-width: 767px) {
+    .testi-part {
+        .container {
+            max-width: 570px;
+        }
+    }
+}
+
+/*=====================================
+            BLOG PART STYLE
+======================================*/
+.blog-btn {
+    text-align: center;
+    margin-top: 20px;
+}

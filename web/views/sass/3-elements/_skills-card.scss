@@ -1,0 +1,77 @@
+
+
+
+/*=====================================
+          SKILLS CARD STYLE
+======================================*/
+.skills-card {
+    background: var(--white);
+    text-align: center;
+    border-radius: 5px;
+    padding: 30px 0px 0px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.15);
+    @include cursor__transition;
+    transform: scale(1);
+
+    &:hover {
+        transform: scale(1.05);
+        background: var(--primary);
+
+        .skills-img {
+            background: var(--white);
+            box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
+
+            img {
+                height: 35px;
+            }
+        }
+
+        .skills-name {
+            p {
+                color: var(--white);
+            }
+        }
+    }
+}
+
+.skills-img {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0px auto 30px;
+    @include cursor__transition;
+
+    img {
+        width: auto;
+        height: 60px;
+        @include cursor__transition;
+    }
+}
+
+.skills-name {
+    border-top: 1px solid var(--border);
+
+    p {
+        color: var(--heading);
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 8px 0px;
+        @include cursor__transition;
+    }
+}
+
+// for skill card responsive style
+@media (max-width: 767px) {
+    .skills-parent {
+        .col-6 {
+            padding: 0px 10px;
+        }
+    }
+
+    .skills-card {
+        margin-bottom: 20px;
+    }
+}

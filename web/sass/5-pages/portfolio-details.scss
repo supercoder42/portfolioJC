@@ -1,0 +1,440 @@
+
+
+
+
+//========================================
+//          1 - HELPERS FOLDER
+//========================================
+@import "../1-helpers/_mixin.scss";
+
+
+//========================================
+//          2 - COMPONENTS FOLDER
+//========================================
+@import "../2-components/_breadcrumb.scss";
+
+
+//========================================
+//          4 - LAYOUTS FOLDER
+//========================================
+@import "../4-layouts/_single-banner.scss";
+@import "../4-layouts/_contact.scss";
+
+
+/*=====================================
+            SINGLE BANNER STYLE
+======================================*/
+.single-oly {
+    padding: 115px 0px 115px;
+}
+
+@media (max-width: 767px) {
+    .single-oly {
+        padding: 80px 0px 80px;
+    }
+}
+
+/*=====================================
+      PORTFOLIO DETAILS PART STYLE
+======================================*/
+.details-part {
+    padding: 100px 0px 0px;
+}
+
+// portfolio details image
+.details-img {
+    margin-bottom: 40px;
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.15);
+    }
+}
+
+// portfolio details content meta
+.details-content-meta {
+    margin-bottom: 38px;
+
+    ul {
+        @include flex__center;
+        justify-content: space-between;
+
+        li {
+            padding: 5px 18px;
+            border-radius: 50px;
+            border: 1px solid var(--border);
+            @include flex__center;
+
+            &:hover {
+                p {
+                    span {
+                        color: var(--primary);
+                    }
+                }
+            }
+
+            i {
+                font-size: 15px;
+                margin-right: 5px;
+            }
+
+            p {
+                font-size: 15px;
+
+                span {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+
+// portfolio details content
+.details-content {
+    h2 {
+        font-size: 32px;
+        margin-bottom: 25px;
+
+        a {
+            color: var(--heading);
+
+            &:hover {
+                color: var(--primary);
+            }
+        }
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+}
+
+.details-sub-list {
+    h4 {
+        font-weight: 600;
+        padding-bottom: 12px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid var(--border);
+    }
+
+    ul {
+        margin-left: 30px;
+        list-style-type: disc;
+
+        li {
+            padding: 8px 0px;
+        }
+    }
+}
+
+// portfolio details card
+.details-card {
+    padding: 18px 25px;
+    border-radius: 8px;
+    background: var(--white);
+    margin-bottom: 30px;
+    box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.15);
+
+    h5 {
+        position: relative;
+        margin-bottom: 30px;
+        font-weight: 600;
+
+        &::before {
+            position: absolute;
+            content: "";
+            left: 0px;
+            bottom: -15px;
+            width: 50px;
+            height: 2px;
+            background: var(--primary);
+        }
+    }
+}
+
+// portfolio details button list
+.details-btn-list {
+    width: 100%;
+    
+    li {
+        margin-bottom: 20px;
+    
+        .btn {
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
+}
+
+// portfolio details meta list
+.details-meta-list {
+    width: 100%;
+
+    li {
+        padding: 10px 0px;
+        @include flex__center;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--border);
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        h6 {
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 15px;
+            text-align: left;
+        }
+
+        a {
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            border-radius: 8px;
+            background: var(--gray);
+
+            img {
+                height: 35px;
+            }
+        }
+    }
+}
+
+// portfolio details share list
+.details-share-list {
+    li {
+        display: inline-block;
+        margin: 4px;
+    }
+}
+
+// for responsive portfolio details style
+@media (max-width: 991px) {
+    .details-content-meta {
+        margin-bottom: 30px;
+
+        ul {
+            flex-wrap: wrap;
+            justify-content: center;
+
+            li {
+                margin: 8px;
+            }
+        }
+    }
+
+    .details-content {
+        h2 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .details-part {
+        padding: 60px 0px 0px;
+    }
+
+    .details-img {
+        margin-bottom: 30px;
+    }
+
+    .details-sub-list {
+        margin-bottom: 25px;
+    }
+
+    .details-share-list {
+        li {
+            margin: 2px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .details-part {
+        padding: 80px 0px 0px;
+    }
+
+    .details-btn-list {
+        .btn {
+            padding: 15px 28px;
+        }
+    }
+
+    .details-share-list {
+        li {
+            margin: 2px;
+
+            .icon {
+                i {
+                    width: 36px;
+                    height: 36px;
+                    font-size: 15px;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .details-content-meta {
+        ul {
+            li {
+                padding: 5px 8px;
+                margin: 5px;
+            }
+        }
+    }
+
+    .details-share-list {
+        li {
+            .icon {
+                i {
+                    width: 36px;
+                    height: 36px;
+                    font-size: 15px;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+}
+
+
+/*=====================================
+      PORTFOLIO COMMENT PART STYLE
+======================================*/
+.comment-part {
+    padding: 50px 0px 0px;
+}
+
+.comment-heading {
+    margin-bottom: 25px;
+
+    h3 {
+        padding-bottom: 25px;
+        border-bottom: 1px solid var(--border);
+    }
+}
+
+// for blog details comment list
+.comment-list {
+    margin-bottom: 50px;
+
+    li {
+        ul {
+            margin-left: 100px;
+        }
+    }
+}
+
+// for blog details comment 
+.comment {
+    display: flex;
+    padding: 25px 0px;
+    border-top: 1px solid var(--bordercolor);
+    position: relative;
+}
+
+// for blog details comment user image
+.comment-img {
+    margin-right: 30px;
+
+    a {
+        img {
+            width: 80px;
+            border-radius: 50%;
+        }
+    }
+}
+
+// for blog details comment content
+.comment-content {
+    padding: 35px 50px;
+    border-radius: 50px;
+    background: var(--gray);
+
+    h4 {
+        font-weight: 600;
+        margin-bottom: 10px;
+
+        span {
+            font-size: 14px;
+            font-weight: 500;
+            display: block;
+            margin-top: 5px;
+        }
+    }
+
+    p {
+        margin-bottom: 25px;
+    }
+}
+
+// for blog details comment reply arrow
+.comment-reply {
+    text-align: right;
+
+    a {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--text);
+        text-transform: capitalize;
+
+        &:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        i {
+            margin-right: 8px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .comment-part {
+        padding: 30px 0px 0px;
+    }
+
+    .comment-heading h3 {
+        font-size: 24px;
+    }
+
+    .comment-list li ul {
+        margin-left: 40px;
+    }
+
+    .comment {
+        padding: 15px 0px;
+    }
+
+    .comment-img {
+        margin-right: 10px;
+
+        a {
+            img {
+                width: 50px;
+            }
+        }
+    }
+
+    .comment-content {
+        padding: 25px 20px;
+    }
+
+    .form-btn {
+        text-align: center;
+    }
+}
+
+
+
+

@@ -1,0 +1,78 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 04/05/2020 04:29
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-upload:before { content: "\f100"; }
+.flaticon-creativity:before { content: "\f101"; }
+.flaticon-computer:before { content: "\f102"; }
+.flaticon-placeholder:before { content: "\f103"; }
+.flaticon-telephone:before { content: "\f104"; }
+.flaticon-mail:before { content: "\f105"; }
+.flaticon-tools-and-utensils:before { content: "\f106"; }
+.flaticon-credit-card:before { content: "\f107"; }
+.flaticon-bar-chart:before { content: "\f108"; }
+.flaticon-paper-plane:before { content: "\f109"; }
+.flaticon-magnifying-glass:before { content: "\f10a"; }
+.flaticon-devices:before { content: "\f10b"; }
+.flaticon-fast-forward-double-right-arrows-symbol:before { content: "\f10c"; }
+.flaticon-double-left-arrows-symbol:before { content: "\f10d"; }
+.flaticon-facebook:before { content: "\f10e"; }
+.flaticon-twitter:before { content: "\f10f"; }
+.flaticon-linkedin:before { content: "\f110"; }
+.flaticon-github:before { content: "\f111"; }
+.flaticon-youtube:before { content: "\f112"; }
+    
+    $font-Flaticon-upload: "\f100";
+    $font-Flaticon-creativity: "\f101";
+    $font-Flaticon-computer: "\f102";
+    $font-Flaticon-placeholder: "\f103";
+    $font-Flaticon-telephone: "\f104";
+    $font-Flaticon-mail: "\f105";
+    $font-Flaticon-tools-and-utensils: "\f106";
+    $font-Flaticon-credit-card: "\f107";
+    $font-Flaticon-bar-chart: "\f108";
+    $font-Flaticon-paper-plane: "\f109";
+    $font-Flaticon-magnifying-glass: "\f10a";
+    $font-Flaticon-devices: "\f10b";
+    $font-Flaticon-fast-forward-double-right-arrows-symbol: "\f10c";
+    $font-Flaticon-double-left-arrows-symbol: "\f10d";
+    $font-Flaticon-facebook: "\f10e";
+    $font-Flaticon-twitter: "\f10f";
+    $font-Flaticon-linkedin: "\f110";
+    $font-Flaticon-github: "\f111";
+    $font-Flaticon-youtube: "\f112";

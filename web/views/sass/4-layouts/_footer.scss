@@ -1,0 +1,88 @@
+
+
+
+/*=====================================
+            FOOTER PART STYLE
+======================================*/
+.footer-part {
+    margin-bottom: 80px;
+}
+
+.footer-logo {
+    text-align: center;
+    margin-bottom: 50px;
+
+    a {
+        img {
+            width: 200px;
+        }
+    }
+}
+
+.footer-icon {
+    @include flex__center;
+    margin-bottom: 55px;
+
+    li {
+        margin: 0px 15px;
+    }
+}
+
+.footer-text {
+    @include flex__center;
+
+    li {
+        padding: 0px 25px;
+        border-right: 2px solid #999999;
+
+        &:last-child {
+            border-right: none;
+        }
+
+        h6 {
+            font-weight: 400;
+
+            span {
+                color: var(--primary);
+            }
+
+            a {
+                color: var(--primary);
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+// FOOTER RESPONSIVE STYLE
+
+@media (max-width: 767px) {
+    .footer-logo {
+        a {
+            img {
+                width: 145px;
+            }
+        }
+    }
+
+    .footer-icon {
+        margin-bottom: 45px;
+
+        li {
+            margin: 0px 10px;
+        }
+    }
+
+    .footer-text {
+        flex-direction: column;
+
+        li {
+            padding: 0px;
+            border: none;
+            margin: 5px 0px;
+        }
+    }
+}

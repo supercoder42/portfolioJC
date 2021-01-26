@@ -1,0 +1,66 @@
+
+
+
+/*=====================================
+          SECTION HEADING STYLE
+======================================*/
+.section {
+    padding: 120px 0px 0px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 48px;
+
+    p {
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        color: var(--heading);
+        text-transform: uppercase;
+        margin-bottom: 18px;
+    
+        span {
+            color: var(--primary);
+        }
+    }
+
+    h2 {
+        width: 450px;
+        margin: 0 auto;
+    }
+}
+
+
+// for section responsive style
+@media (max-width: 767px) {
+    .section {
+        padding: 60px 0px 0px;
+    }
+
+    .section-heading {
+        margin-bottom: 25px;
+        
+        p {
+            font-size: 16px;
+        }
+
+        h2 {
+            width: 100%;
+            font-size: 28px;
+            line-height: 36px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        padding: 80px 0px 0px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .section {
+        padding: 100px 0px 0px;
+    }
+}

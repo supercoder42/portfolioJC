@@ -1,0 +1,35 @@
+
+
+
+//========================================
+//          1 - HELPERS FOLDER
+//========================================
+@import "../1-helpers/_mixin.scss";
+
+
+//========================================
+//          2 - COMPONENTS FOLDER
+//========================================
+@import "../2-components/_back2top-btn.scss";
+@import "../2-components/_breadcrumb.scss";
+
+
+//========================================
+//          4 - LAYOUTS FOLDER
+//========================================
+@import "../4-layouts/_single-banner.scss";
+@import "../4-layouts/_contact.scss";
+
+
+/*=====================================
+            SINGLE BANNER STYLE
+======================================*/
+.single-oly {
+    padding: 115px 0px 115px;
+}
+
+@media (max-width: 767px) {
+    .single-oly {
+        padding: 80px 0px 80px;
+    }
+}

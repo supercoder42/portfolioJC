@@ -1,0 +1,47 @@
+
+
+
+/*=====================================
+         PAGINATION PART STYLE
+======================================*/
+.pagination {
+    align-items: center;
+    justify-content: center;
+}
+
+.page-item {
+    margin: 0px 5px;
+
+    &:first-child,
+    &:last-child {
+        .page-link {
+            border-radius: 50%;
+        }
+    }
+
+    .active {
+        color: var(--white);
+        background: var(--primary);
+    }
+}
+
+.page-link {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    border: none;
+    padding: 0px;
+    color: var(--text);
+    background: var(--light-white);
+
+    &:hover {
+        color: var(--white);
+        background: var(--primary);
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+}

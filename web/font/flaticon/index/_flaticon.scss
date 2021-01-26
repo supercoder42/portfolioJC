@@ -1,0 +1,108 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 11/05/2020 03:42
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-calendar:before { content: "\f100"; }
+.flaticon-graphic:before { content: "\f101"; }
+.flaticon-time:before { content: "\f102"; }
+.flaticon-plane:before { content: "\f103"; }
+.flaticon-search:before { content: "\f104"; }
+.flaticon-pin:before { content: "\f105"; }
+.flaticon-telephone:before { content: "\f106"; }
+.flaticon-mail:before { content: "\f107"; }
+.flaticon-tools-and-utensils:before { content: "\f108"; }
+.flaticon-responsive-design:before { content: "\f109"; }
+.flaticon-programmer:before { content: "\f10a"; }
+.flaticon-negotiation:before { content: "\f10b"; }
+.flaticon-handshake:before { content: "\f10c"; }
+.flaticon-download:before { content: "\f10d"; }
+.flaticon-favorites:before { content: "\f10e"; }
+.flaticon-share:before { content: "\f10f"; }
+.flaticon-left-arrow:before { content: "\f110"; }
+.flaticon-right-arrow:before { content: "\f111"; }
+.flaticon-play:before { content: "\f112"; }
+.flaticon-upload:before { content: "\f113"; }
+.flaticon-deadline:before { content: "\f114"; }
+.flaticon-project-management:before { content: "\f115"; }
+.flaticon-chat:before { content: "\f116"; }
+.flaticon-computer:before { content: "\f117"; }
+.flaticon-computer-1:before { content: "\f118"; }
+.flaticon-shopping-cart:before { content: "\f119"; }
+.flaticon-wordpress:before { content: "\f11a"; }
+.flaticon-online-ads:before { content: "\f11b"; }
+.flaticon-human-resources:before { content: "\f11c"; }
+.flaticon-testimonial:before { content: "\f11d"; }
+.flaticon-rating:before { content: "\f11e"; }
+.flaticon-award:before { content: "\f11f"; }
+.flaticon-graduation-cap:before { content: "\f120"; }
+.flaticon-medal:before { content: "\f121"; }
+    
+    $font-Flaticon-calendar: "\f100";
+    $font-Flaticon-graphic: "\f101";
+    $font-Flaticon-time: "\f102";
+    $font-Flaticon-plane: "\f103";
+    $font-Flaticon-search: "\f104";
+    $font-Flaticon-pin: "\f105";
+    $font-Flaticon-telephone: "\f106";
+    $font-Flaticon-mail: "\f107";
+    $font-Flaticon-tools-and-utensils: "\f108";
+    $font-Flaticon-responsive-design: "\f109";
+    $font-Flaticon-programmer: "\f10a";
+    $font-Flaticon-negotiation: "\f10b";
+    $font-Flaticon-handshake: "\f10c";
+    $font-Flaticon-download: "\f10d";
+    $font-Flaticon-favorites: "\f10e";
+    $font-Flaticon-share: "\f10f";
+    $font-Flaticon-left-arrow: "\f110";
+    $font-Flaticon-right-arrow: "\f111";
+    $font-Flaticon-play: "\f112";
+    $font-Flaticon-upload: "\f113";
+    $font-Flaticon-deadline: "\f114";
+    $font-Flaticon-project-management: "\f115";
+    $font-Flaticon-chat: "\f116";
+    $font-Flaticon-computer: "\f117";
+    $font-Flaticon-computer-1: "\f118";
+    $font-Flaticon-shopping-cart: "\f119";
+    $font-Flaticon-wordpress: "\f11a";
+    $font-Flaticon-online-ads: "\f11b";
+    $font-Flaticon-human-resources: "\f11c";
+    $font-Flaticon-testimonial: "\f11d";
+    $font-Flaticon-rating: "\f11e";
+    $font-Flaticon-award: "\f11f";
+    $font-Flaticon-graduation-cap: "\f120";
+    $font-Flaticon-medal: "\f121";

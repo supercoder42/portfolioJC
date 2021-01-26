@@ -1,0 +1,40 @@
+
+
+
+//=====================================
+//      TRANSITION BROWSER PREFIX
+//======================================
+@mixin cursor__transition {
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+// =====================================
+//         FLEX CENTER PROPERTY
+//======================================
+@mixin flex__center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// =====================================
+//         FLEX START PROPERTY
+//======================================
+@mixin flex__start {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+// =====================================
+//      BACKGROUND IMAGE PROPERTY
+//======================================
+@mixin background__property {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

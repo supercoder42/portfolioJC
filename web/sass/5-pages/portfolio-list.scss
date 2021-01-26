@@ -1,0 +1,156 @@
+
+
+
+//========================================
+//          1 - HELPERS FOLDER
+//========================================
+@import "../1-helpers/_mixin.scss";
+
+
+//========================================
+//          2 - COMPONENTS FOLDER
+//========================================
+@import "../2-components/_select-option.scss";
+@import "../2-components/_breadcrumb.scss";
+@import "../2-components/_pagination.scss";
+@import "../2-components/_slider-arrow.scss";
+
+
+
+//========================================
+//          3 - ELEMENTS FOLDER
+//========================================
+@import "../3-elements/_feature-card.scss";
+@import "../3-elements/_portfolio-card.scss";
+
+
+//========================================
+//          3 - LAYOUTS FOLDER
+//========================================
+@import "../4-layouts/_single-banner.scss";
+@import "../4-layouts/_contact.scss";
+
+
+/*=====================================
+        INNER PORTFOLIO PART STYLE
+======================================*/
+.port-part {
+    padding: 32px 0px 0px;
+}
+
+.port-heading {
+    text-align: center;
+    margin-bottom: 45px;
+
+    h2 {
+        font-size: 40px;
+        text-transform: capitalize;
+        margin-bottom: 22px;
+    }
+}
+
+.port-menu {
+    @include flex__center;
+    margin-bottom: 35px;
+
+    li {
+        margin: 0px 12px;
+
+        .active {
+            color: var(--white);
+            background: var(--primary);
+        }
+    }
+}
+
+.menu {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--heading);
+    text-transform: capitalize;
+    background: none;
+    border: none;
+    letter-spacing: 0.3px;
+    padding: 5px 20px;
+    border-radius: 8px;
+    border: 1px solid var(--primary);
+    border-bottom: 2px solid var(--primary);
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.port-parent {
+    margin-bottom: 25px;
+}
+
+.port-card {
+    margin: 25px 10px;
+}
+
+
+// INNER PORTFOLIO RESPONSIVE STYLE
+
+@media (max-width: 767px) {
+    .port-part {
+        padding: 0px 0px;
+    }
+
+    .port-heading {
+        margin-bottom: 30px;
+
+        h2 {
+            font-size: 28px;
+            line-height: 36px;
+        }
+    }
+
+    .port-menu {
+        flex-wrap: wrap;
+
+        li {
+            margin: 7px 7px;
+        }
+    }
+
+    .port-card {
+        width: 100%;
+        margin: 15px 0px;
+    }
+}
+
+@media (min-width: 380px) and (max-width: 575px) {
+    .port-part {
+        .container {
+            max-width: 380px;
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .port-part {
+        .container {
+            max-width: 568px;
+        }
+    }
+
+    .port-parent {
+        .col-sm-6 {
+            padding: 0px 10px;
+        }
+    }
+
+    .port-card {
+        margin: 10px 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .port-menu {
+        li {
+            margin: 0px 5px;
+        }
+    }
+}

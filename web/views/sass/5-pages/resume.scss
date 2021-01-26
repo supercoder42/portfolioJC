@@ -1,0 +1,239 @@
+
+
+
+//========================================
+//          1 - HELPERS FOLDER
+//========================================
+@import "../1-helpers/_mixin.scss";
+
+
+//========================================
+//          2 - COMPONENTS FOLDER
+//========================================
+@import "../2-components/_back2top-btn.scss";
+@import "../2-components/_breadcrumb.scss";
+
+
+//========================================
+//          3 - ELEMENTS FOLDER
+//========================================
+@import "../3-elements/_resume-card.scss";
+@import "../3-elements/_reference-card.scss";
+@import "../3-elements/_skills-card.scss";
+
+
+//========================================
+//          4 - LAYOOUTS FOLDER
+//========================================
+@import "../4-layouts/_single-banner.scss";
+@import "../4-layouts/_contact.scss";
+
+
+/*=====================================
+            SINGLE BANNER STYLE
+======================================*/
+.single-oly {
+    padding: 115px 0px 115px;
+}
+
+@media (max-width: 767px) {
+    .single-oly {
+        padding: 80px 0px 80px;
+    }
+}
+
+
+/*=====================================
+            ABOUT PART STYLE
+======================================*/
+.about-summery {
+    margin-bottom: 50px;
+
+    h3 {
+        font-weight: 600;
+        margin-bottom: 38px;
+    }
+}
+
+.about-list {
+    @include flex__center;
+    justify-content: flex-start;
+    margin-bottom: 55px;
+
+    ul {
+        &:first-child {
+            margin-right: 80px;
+        }
+    }
+
+    li {
+        @include flex__center;
+        justify-content: flex-start;
+        margin-bottom: 18px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+
+        h6 {
+            text-transform: capitalize;
+            font-weight: 600;
+            margin-right: 15px;
+        }
+
+        p {
+            font-weight: 500;
+        }
+    }
+}
+
+.about-img img {
+    width: auto;
+    height: 450px;
+    margin-left: 50px;
+}
+
+
+// for about responsive style
+@media (max-width: 767px) {
+    .about-summery {
+        margin-bottom: 30px;
+
+        h3 {
+            font-size: 26px;
+            line-height: 36px;
+            margin-bottom: 18px;
+        }
+    }
+
+    .about-list {
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+
+        ul {
+            margin-bottom: 18px;
+        }
+    }
+
+    .about-img img {
+        display: none;
+    }
+
+    .resume-card {
+        ul {
+            margin: 0px 18px;
+        }
+    }
+
+    .refer-card {
+        flex-wrap: wrap;
+    }
+
+    .refer-content {
+        transform: translateX(0px);
+        transform: translateY(-50px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .resume-card {
+        ul {
+            margin: 0px 22px;
+        }
+    }
+
+    .refer-card {
+        margin-bottom: 30px;
+    }
+
+    .about-img img {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .about-list {
+        ul {
+            &:nth-child(1) {
+                margin-right: 45px;
+            }
+
+            li {
+                h6 {
+                    font-size: 15px;
+                    margin-right: 8px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .about-img img {
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+    }
+
+    .refer-img {
+        img {
+            width: 215px;
+            height: 215px;
+        }
+    }
+
+    .refer-content {
+        padding: 35px 25px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+    .about-img img {
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+    }
+}
+
+/*=====================================
+        RESUME COMMON PART STYLE
+======================================*/
+.edu-part,
+.refer-part,
+.footer-part {
+    padding: 93px 0px 0px;
+}
+
+@media (max-width: 767px) {
+    .edu-part,
+    .refer-part,
+    .footer-part {
+        padding: 50px 0px 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .edu-part,
+    .refer-part,
+    .footer-part {
+        padding: 60px 0px 0px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .edu-part,
+    .refer-part,
+    .footer-part {
+        padding: 70px 0px 0px;
+    }
+}
+
+
+
+
+
+
+
+

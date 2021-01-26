@@ -1,0 +1,106 @@
+
+
+
+/*=====================================
+          COUNTER CARD STYLE
+======================================*/
+.counter-card {
+    @include flex__center;
+
+    i {
+        font-size: 70px;
+        line-height: 70px;
+        margin-right: 25px;
+    }
+}
+
+.count-1 {
+    i {
+        background: -webkit-linear-gradient(#38ef7d, #35df76);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.count-2 {
+    i {
+        background: -webkit-linear-gradient(#fc4a1a, #f7b733);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.count-3 {
+    i {
+        background: -webkit-linear-gradient(#ADD100, #a1c004);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.counter-info {
+    h3 {
+        color: #fff;
+        font-size: 45px;
+        font-weight: 600;
+        margin-bottom: 13px;
+    }
+
+    p {
+        font-size: 18px;
+        color: var(--white);
+        text-transform: capitalize;
+    }
+}
+
+
+// for counter card responsive style
+@media (max-width: 767px) {
+    .counter-card {
+        width: 235px;
+        margin: 0 auto 30px;
+        justify-content: flex-start;
+
+        i {
+            font-size: 55px;
+            line-height: 55px;
+        }
+    }
+
+    .count-3 {
+        margin-bottom: 0px;
+    }
+
+    .counter-info {
+        h3 {
+            font-size: 35px;
+            line-height: 43px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .counter-card {
+        i {
+            font-size: 50px;
+            line-height: 50px;
+        }
+    }
+
+    .counter-info {
+        h3 {
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 0px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}

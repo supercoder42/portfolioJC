@@ -1,0 +1,90 @@
+
+
+
+/*=====================================
+            CONTACT PART STYLE
+======================================*/
+.contact-address{
+    text-align: center;
+
+    &:hover {
+        .address-icon {
+            i {
+                color: var(--white);
+                background: var(--primary);
+                transform: translateY(-3px);
+            }
+        }
+    }
+}
+
+.address-icon {
+    margin-bottom: 28px;
+
+    i {
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+        line-height: 48px;
+        text-align: center;
+        border-radius: 50%;
+        display: inline-block;
+        color: var(--white);
+        background: var(--heading);
+        text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.25);
+        @include cursor__transition;
+    }
+}
+
+.address-text {
+    h4 {
+        line-height: 20px;
+        margin-bottom: 22px;
+        text-transform: capitalize;
+    }
+
+    p {
+        color: var(--heading);
+        line-height: 24px;
+
+        span {
+            display: block;
+            margin-top: 8px;
+        }
+    }
+}
+
+.contact-img {
+    img {
+        width: 100%;
+    }
+}
+
+// CONTACT RESPONSIVE STYLE
+
+@media (max-width: 767px) {
+    .contact-part {
+        .mb-5 {
+            margin-bottom: 10px !important;
+        }
+    }
+
+    .contact-address {
+        margin-bottom: 30px;
+    }
+
+    .contact-img {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .address-text {
+        p {
+            font-size: 15px;
+        }
+    }
+}
+
+

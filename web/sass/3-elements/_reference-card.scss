@@ -1,0 +1,67 @@
+
+
+
+/*=====================================
+          REFERENCE PART STYLE
+======================================*/
+.refer-card {
+    @include flex__center;
+}
+
+.refer-img {
+    border-radius: 50%;
+    border: 5px solid var(--primary);
+    box-shadow: 0px 0px 60px 3px rgba(0, 0, 0, 0.15);
+
+    img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: 5px solid var(--white);
+    }
+}
+
+.refer-content {
+    width: 100%;
+    text-align: center;
+    padding: 35px 45px;
+    border-radius: 8px;
+    background: var(--white);
+    box-shadow: 0px 0px 60px 3px rgba(0, 0, 0, 0.15);
+    transform: translateX(-50px);
+    position: relative;
+
+    h4 {
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-bottom: 5px;
+    }
+    
+    p {
+        font-weight: 500;
+
+        span {
+            display: block;
+        }
+    }
+}
+
+.refer-contact {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 105px;
+
+    li {
+        display: inline-block;
+        margin: 0px 5px;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+    }
+}

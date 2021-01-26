@@ -1,0 +1,71 @@
+
+
+
+
+/*=====================================
+         BLOG SUGGEST CARD STYLE
+======================================*/
+.blog-suggest {
+    @include flex__center;
+    justify-content: flex-start;
+    margin-bottom: 28px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--border);
+}
+
+.suggest-img {
+    a {
+        img {
+            width: 100px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 15px;
+            box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+.suggest-title {
+    margin-bottom: 18px;
+
+    h6 {
+        font-weight: 600;
+        line-height: 24px;
+
+        a {
+            color: var(--heading);
+            @include cursor__transition;
+            
+            &:hover {
+                color: var(--primary);
+            }
+        }
+    }
+}
+
+.suggest-date {
+    @include flex__center;
+    justify-content: flex-start;
+
+    i {
+        margin-right: 10px;
+    }
+
+    p {
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+}
+
+// for blog suggest responsive
+@media (max-width: 767px) {
+    .suggest-title {
+        margin-bottom: 8px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .suggest-title {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,63 @@
+
+
+
+/*=====================================
+            FEATURE CARD STYLE
+======================================*/
+.feature-part {
+    transform: translateY(-50%);
+}
+
+.feature-card {
+    width: 180px;
+    margin: 0px 25px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 30px 15px 35px;
+    background: var(--feature-card);
+
+    &:hover {
+        i {
+            color: var(--white);
+            background: var(--primary);
+        }
+    }
+
+    i {
+        width: 55px;
+        height: 55px;
+        font-size: 24px;
+        line-height: 55px;
+        text-align: center;
+        color: var(--primary);
+        background: var(--white);
+        border-radius: 50%;
+        margin-bottom: 25px;
+        display: inline-block;
+        box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
+        @include cursor__transition;
+    }
+
+    h6 {
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+}
+
+@media (max-width: 575px) {
+    .feature-part {
+        transform: translateY(-35%);
+    }
+
+    .feature-card {
+        width: 125px;
+        margin: 0px 8px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .feature-card {
+        margin: 0px 8px;
+        padding: 30px 12px 35px;
+    }
+}
